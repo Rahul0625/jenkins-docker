@@ -1,4 +1,4 @@
 FROM openjdk:17
 EXPOSE 9090
-ADD target/library-project.jar library-project.jar
-ENTRYPOINT ["java","-jar","/library-project.jar"]
+ADD target/hibernateOne.war hibernateOne.war
+ENTRYPOINT ["java","-jar","/hibernateOne.war"]
