@@ -7,7 +7,7 @@ FROM tomcat:latest
 # Create a directory to copy your WAR file into
 RUN mkdir -p "D:/Softwares & Others/apache-tomcat-7.0.109/webapps/ROOT"
 # Copy the WAR file into the webapps directory of Tomcat
-COPY "Jenkins + Docker\src\main\webapp\hibernateOne.war" "D:/Softwares & Others/apache-tomcat-7.0.109/webapps/ROOT/"
+COPY "Jenkins + Docker\target\hibernateOne.war" "D:/Softwares & Others/apache-tomcat-7.0.109/webapps/ROOT/"
 # Expose the default port for Tomcat
 EXPOSE 9090
 # Start Tomcat when the container starts
